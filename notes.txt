@@ -1,0 +1,29 @@
+Stages of Predictive Modeling:
+	1. Problem Definition.
+	2. Hypothesis Generation.
+	3. Data Extraction/collection.
+	4. Data Exploration and Transformation.
+	5. Predictive Modeling.
+	6. Model Deployment.
+
+PROBLEM DEFINITION: 
+	We are suppose to predict the house prices based on different attributes.
+
+HYPOTHESIS WE ARE LOOKING AT:
+	1. Size of the house.
+	2. Location.
+	3. Facilities.
+	4. Crime rate of the locality.
+	5. Availabilty (as in ready to move-in or not).
+
+DATA EXLPORATION:
+	1. Reading the data.
+	2. Variable Identification.
+	3. Univariate Analysis. (Bar-plots, Histograms)
+	4. Bi-variate Analysis. (Scatterplots)
+	5. Missing Value Treatment. (Mean, Mod, Median)
+	6. Outlier Treatment.
+	7. Variable Transformation.
+
+
+	 
