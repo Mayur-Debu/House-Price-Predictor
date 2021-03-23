@@ -1,6 +1,6 @@
 # 🏠 House Price Prediction using Machine Learning 🏠
 
-### Deatils about the project:
+**** 
 #### Domain: Machine Learning
 #### Front-End: HTML, CSS...
 #### Back-End: Pyhton, Server-side: Flask web framework
