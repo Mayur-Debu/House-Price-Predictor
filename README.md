@@ -1,9 +1,10 @@
 # 🏠 House Price Prediction using Machine Learning 🏠
 
 **** 
-#### Domain: Machine Learning
-#### Front-End: HTML, CSS...
-#### Back-End: Pyhton, Server-side: Flask web framework
+
+```
+Git Clone: https://github.com/Mayur-Debu/House-Price-Predictor.git
+```
 
 ```
 Problem Definition: 
@@ -22,4 +23,4 @@ Team Members:
 
 ****
 
-#### 💻 Current working status: 'Data Exploration'.
+#### 💻 Current working status: 'Front End.
