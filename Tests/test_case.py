@@ -4,13 +4,58 @@ from termcolor import cprint
 global testCaseCounter
 
 testCases = [
-    ['Anna Nagar', 'No', 'Commercial', 'Gravel', 1000, 2, 3, 4, 5, 5, 3, 1],
-    ['Anna Nagar', 'No', 'Commercial', 'Gravel', 1000, 2, 3, 4, 5, 5, 3, 1],
-    ['Anna Nagar', 'No', 'Commercial', 'Gravel', 1000, 2, 3, 4, 5, 5, 3, 1],
-    ['Anna Nagar', 'No', 'Commercial', 'Gravel', 1000, 2, 3, 4, 5, 5, 7, 1],
-    ['Anna Nagar', 'No', 'Commercial', 'Gravel', 1000, 2, 3, 4, 5, 5, 3, 1],
-    ['Anna Nagar', 'No', 'Commercial', 'Gravel', 1000, 2, 3, 4, 5, 5, 3, 1],
-    ['Anna Nagar', 'No', 'Commercial', 'Gravel', 1000, 2, 3, 4, 5, 5, 3, 1]
+    # """
+    # Test Case Set 1:
+    # @author: Mayur Manohar Patil
+    # """
+
+    ['Adyar', 'No', 'Commercial', 'Gravel', 1000, 2, 3, 4, 5, 5, 3, 1],
+    ['Anna Nagar', 'Yes', 'Commercial', 'Gravel', 1000, 2, 3, 4, 5, 5, 3, 1],
+    ['Chrompet', 'no', 'others', 'Gravel', 1000, 2, 3, 4, 5, 5, 3, 1],
+    ['KK Nagar', 'No', 'Commercial', 'paved', 1000, 2, 3, 4, 5, 5, 7, 1],      # This  test case is wrong and hence it should fail
+    ['Karapakkam', 'No', 'house', 'Gravel', 1000, 2, 3, 4, 5, 5, 3, 1],
+    ['T Nagar', 'No', 'Commercial', 'Gravel', 1000, 2, 3, 4, 5, 5, 3, 1],
+    ['Velachery', 'YES', 'Commercial', 'Gravel', 2500, 5, 5, 6, 5, 5, 5, 5]
+
+
+    # """
+    # Test Case Set 2:
+    # @author: Bhushan Ramkrushna Upasani
+    # """
+
+
+
+
+
+
+
+
+    # """
+    # Test Case Set 3:
+    # @author: Anup Sanjay Patil
+    # """
+
+
+
+
+
+
+
+
+
+    # """
+    # Test Case Set 4:
+    # @author: Janhavi Chaudhari
+    # """
+
+
+
+
+
+
+
+
+    
 ]
 
 testCaseCounter = 1
@@ -32,7 +77,7 @@ for testCase in testCases:
 
 
     if(unitTester(location, parking, houseType, streetType, INT_SQFT, N_BEDROOM, N_BATHROOM, N_ROOM, QS_ROOMS, QS_BATHROOM, QS_BEDROOM, QS_OVERALL)):
-        cprint(f'Test Case {testCaseCounter} Passes', 'green', attrs=['bold'])
+        cprint(f'Test Case {testCaseCounter} Passed', 'green', attrs=['bold'])
         testCaseCounter += 1
     else:
         cprint(f'Test case {testCaseCounter} Failed', 'red', attrs=['bold'])

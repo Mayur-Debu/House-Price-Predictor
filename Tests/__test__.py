@@ -10,11 +10,11 @@ global __model
 def unitTester(location, parking, houseType, streetType, INT_SQFT, N_BEDROOM, N_BATHROOM, N_ROOM, QS_ROOMS, QS_BATHROOM, QS_BEDROOM, QS_OVERALL):
 
     # Load the machine learning model
-    with open("model/Machine_Learning_Model.pickle", "rb") as f:
+    with open("./model/Machine_Learning_Model.pickle", "rb") as f:
         __model = pickle.load(f)
 
     # Load the json file
-    with open("model/columns.json", "r") as f:
+    with open("./model/columns.json", "r") as f:
         __data_columns = json.load(f)['data_columns']
 
     # print("Artifacts Loaded")
@@ -33,6 +33,7 @@ def unitTester(location, parking, houseType, streetType, INT_SQFT, N_BEDROOM, N_
         return False
 
     try:
+        ValidInputForNRooms = [1,2,3,4,5,6]
         ValidInput = [1, 2, 3, 4, 5]
         x[4] = int(INT_SQFT)
         x[5] = int(N_BEDROOM)
@@ -53,7 +54,7 @@ def unitTester(location, parking, houseType, streetType, INT_SQFT, N_BEDROOM, N_
         if(x[6] not in ValidInput):
             # print("N_BATHROOM: Index out of bound")
             return False
-        if(x[7] not in ValidInput):
+        if(x[7] not in ValidInputForNRooms):
             # print("N_ROOM: Index out of bound")
             return False
         if(x[8] not in ValidInput):
